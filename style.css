@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins";
+}
+/* top section */
+.top{
+    width: 100vw;
+    height: 800px;
+    background-color: #2D25A0;
+}
+/* top nav */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    font-weight: 300;
+}
+.links{
+    margin-left: -100px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-right: 30px;
+}
+.common-button{
+    border: 0;
+    background-color: #E02C6D;
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+.common-button:hover{
+    font-size: 18px;
+    font-weight: 300;
+}
+/* top banner */
+.banner{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.banner-image{
+    width: 500px;
+    transition: 0.3s;
+}
+.banner-image:hover{
+    transform: scale(1.2) rotate(-3deg);
+}
+/* player section */
+.player{
+    margin: 0 15vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-top: 100px;
+}
+.player-card-div{
+    width: 320px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgb(230, 218, 218);
+}
+.player-card-image{
+    width: 300px;
+    margin-left: 10px;
+    transition: .3s;
+}
+.player-card-image:hover{
+    transform: scale(1.05);
+}
+.player-card-name{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+/* highlight */
+.highlight{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+.highlight-texts-div{
+    width: 500px;
+}
+.highlight-title{
+    font-size: 48px;
+    font-weight: bold;
+}
+.highlight-description{
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.highlight-image{
+    width: 550px;
+}
+/* news section */
+.news-header{
+    font-size: 48px;
+    text-align: center;
+    color: #4d44cc;
+    font-weight: 400;
+    margin-top: 150px;
+}
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.news-texts-div{
+    width: 500px;
+}
+.news-title{
+    font-size: 48px;
+    font-weight: bold;
+}
+.news-description{
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.news-image{
+    width: 550px;
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.footer-image{
+    width: 400px;
+    margin-right: 30px;
+}
+.footer-icons-div{
+    margin: 20px 0;
+}
+.icon{
+    width: 30px;
+    margin-right: 20px;
+}
+.footer p{
+    color: gray;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* media query */
+@media only screen and (max-width: 600px) {
+    /* top section */
+    .nav{
+        justify-content: flex-end;
+    }
+    .button-div{
+        margin-right: 20px;
+    }
+    .links{
+      display: none;
+    }
+    .banner{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .banner-text-div{
+        margin: 20px;
+    }
+    .banner-title{
+        font-size: 40px;
+    }
+    .banner-image{
+        width: 100vw;
+    }
+    /* player */
+    .player{
+        grid-template-columns: 1fr;
+        margin: 50px 0;
+    }
+    .player-card-div{
+        justify-self: center;
+        align-self: center;
+    }
+    /* highlight */
+    .highlight{
+        flex-direction: column;
+        text-align: center;
+    }
+    .highlight-texts-div{
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .highlight-title{
+        font-size: 50px;
+    }
+    .highlight-image{
+        width: 100vw;
+    }
+    /* news */
+    
+    .news{
+        flex-direction: column;
+        text-align: center;
+    }
+    .news-texts-div{
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .news-title{
+        font-size: 50px;
+    }
+    .news-image{
+        width: 100vw;
+    }
+    /* footer */
+    .footer-image{
+        width: 100vw;
+    }
+}
